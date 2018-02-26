@@ -13,6 +13,7 @@ if __name__ == "__main__":
     knight = turtle.Turtle()
     knight.shape("turtle")
     knight.penup()
+    knight.speed(1)
     #knight.goto(-224,224)
     #knight.stamp()
     knight.goto(-224,224)
@@ -48,7 +49,7 @@ if __name__ == "__main__":
 
     count = 0
     lst = []
-    matrix[0][0].toggleVisited()
+    #matrix[0][0].toggleVisited()
     first = True
     count = tour(matrix, 0,0,count, knight, first)
     #print(lst)
